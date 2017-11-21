@@ -1,0 +1,9 @@
+<section>
+    <article *ngFor="let office of list">
+      <div *ngIf="office.photo" class="img"><img src="{{ office.photo }}"/></div>
+      <div *ngIf="!office.photo" class="img">
+        <div class="letter">{{ office.name.slice(0, 1) }}</div>
+      </div>
+      <div class="office"><span class="naslov">{{ office.name }}</span>{{ office.description }}</div>
+    </article>
+  </section>
