@@ -1,0 +1,6 @@
+<div *ngIf="isPhoto.photo" class="img">
+  <img [src]="isPhoto.photo">
+</div>
+<div *ngIf="!isPhoto.photo" class="img">
+  <div class="letter">{{ isPhoto.name.slice(0, 1) }}</div>
+</div>

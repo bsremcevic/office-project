@@ -1,0 +1,14 @@
+app-navigation {
+  position: relative;
+}
+app-navigation:before {
+  content: "Offices";
+  position: absolute;
+  z-index: 1;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: white;
+  left: 1rem;
+  /*top: 50%;
+  transform: translateY(-50%);*/
+}

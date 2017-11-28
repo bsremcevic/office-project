@@ -1,15 +1,6 @@
-  <div class="container">
-    <nav>
-      <ul class="menu">
-        <li class="item">
-          <a [class.selected]="nav.list" href="#" (click)="toggleNav('list')">List</a>
-        </li>
-        <li class="item">
-          <a [class.selected]="nav.grid" href="#" (click)="toggleNav('grid')">Grid</a>
-        </li>
-      </ul>
-    </nav>
 
-    <app-list-view *ngIf="nav.list"></app-list-view>
-    <app-grid-view *ngIf="nav.grid"></app-grid-view>
+  <div class="container">
+    <app-header (exportSelectedNav)="navSelected($event)"></app-header>
+    <app-list-view *ngIf="nav === 'List'"></app-list-view>
+    <app-grid-view *ngIf="nav === 'Grid'"></app-grid-view>
   </div>

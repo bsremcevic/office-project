@@ -1,0 +1,25 @@
+
+article {
+  background: white;
+  padding: 1rem;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+  /* min-width: 200px; */
+  /*max-width: 310px;*/
+  min-height: 204px;
+}
+@media (max-width: 550px) {
+  article {
+    max-width: none;
+  }
+}
+
+article .office {
+  text-align: center;
+}
+
+article .office .naslov {
+  display: block;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

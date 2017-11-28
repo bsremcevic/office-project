@@ -8,7 +8,7 @@ import { OFFICESLIST } from '../offices';
   styleUrls: ['./list-view.component.css']
 })
 export class ListViewComponent implements OnInit {
-  list = OFFICESLIST;
+  list: Office[] = OFFICESLIST;
   constructor() { }
 
   ngOnInit() {

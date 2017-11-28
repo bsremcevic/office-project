@@ -1,0 +1,7 @@
+<nav>
+  <ul class="menu">
+    <li class="item" *ngFor="let item of navItems">
+      <a href="#" [class.selected]="item === selectedItem" (click)="toggleNav(item)">{{ item }}</a>
+    </li>
+  </ul>
+</nav>

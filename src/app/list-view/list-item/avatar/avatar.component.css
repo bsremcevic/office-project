@@ -1,0 +1,22 @@
+.img {
+  flex: 0 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.letter {
+  width: 40px;
+  height: 40px;
+  background: lightgray;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
