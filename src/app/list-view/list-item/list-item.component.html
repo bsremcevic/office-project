@@ -1,5 +1,11 @@
 <article>
-    <app-avatar [isPhoto]="list"></app-avatar>
+    <div class="img">
+      <app-avatar
+        [isPhoto]="list.photo ? list.photo : false"
+        [letter]="list.name.slice(0, 1)"
+        [isBig]="false">
+      </app-avatar>
+    </div>
     <div class="office">
       <span class="naslov">{{ list.name }}</span>{{ list.description }}</div>
 </article>

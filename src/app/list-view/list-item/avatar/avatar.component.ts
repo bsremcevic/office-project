@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Office } from '../../../office';
 
 @Component({
   selector: 'app-avatar',
@@ -8,8 +7,10 @@ import { Office } from '../../../office';
 })
 export class AvatarComponent implements OnInit {
 
-  @Input() isPhoto: Office;
-  
+  @Input() isPhoto: boolean;
+  @Input() letter: string;
+  @Input() isBig: boolean = false;
+
   constructor() { }
 
   ngOnInit() {

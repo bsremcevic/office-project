@@ -10,7 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { ListItemComponent } from './list-view/list-item/list-item.component';
 import { AvatarComponent } from './list-view/list-item/avatar/avatar.component';
 import { GridItemComponent } from './grid-view/grid-item/grid-item.component';
-import { AvatarGridComponent } from './grid-view/grid-item/avatar-grid/avatar-grid.component';
 
 
 @NgModule({
@@ -22,8 +21,7 @@ import { AvatarGridComponent } from './grid-view/grid-item/avatar-grid/avatar-gr
     HeaderComponent,
     ListItemComponent,
     AvatarComponent,
-    GridItemComponent,
-    AvatarGridComponent
+    GridItemComponent
   ],
   imports: [
     BrowserModule

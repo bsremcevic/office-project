@@ -3,8 +3,14 @@ article {
   align-items: center;
 }
 
-app-avatar {
+/*app-avatar {
   flex: 0 0 4rem;
+}*/
+
+.img {
+  flex: 0 0 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .office {
