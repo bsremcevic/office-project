@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Office } from '../../office';
 
 @Component({
@@ -6,13 +6,10 @@ import { Office } from '../../office';
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.css']
 })
-export class ListItemComponent implements OnInit {
+export class ListItemComponent {
 
   @Input() list: Office;
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

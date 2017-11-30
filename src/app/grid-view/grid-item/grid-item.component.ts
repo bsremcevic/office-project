@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Office } from '../../office';
 
 @Component({
@@ -6,13 +6,11 @@ import { Office } from '../../office';
   templateUrl: './grid-item.component.html',
   styleUrls: ['./grid-item.component.css']
 })
-export class GridItemComponent implements OnInit {
+export class GridItemComponent {
 
   @Input() list: Office;
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
 }

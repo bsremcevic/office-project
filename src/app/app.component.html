@@ -1,6 +1,6 @@
 
   <div class="container">
-    <app-header (exportSelectedNav)="navSelected($event)"></app-header>
+    <app-header></app-header>
     <app-list-view *ngIf="nav === 'List'"></app-list-view>
     <app-grid-view *ngIf="nav === 'Grid'"></app-grid-view>
   </div>

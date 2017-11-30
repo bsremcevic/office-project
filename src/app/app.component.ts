@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OfficesService } from './offices.service';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nav = 'List';
+  nav: string = 'List';
 
-  navSelected(e){
-    this.nav = e;
-    console.log('app component', this.nav);
+  constructor(private officesService: OfficesService){
+    this.officesService.navUpdated.subscribe(
+      (e: string) => (this.nav = e)
+      //updates the nav var bc of html template testing
+    )
   }
-
 
 }

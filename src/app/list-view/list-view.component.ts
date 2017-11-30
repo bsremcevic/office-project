@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Office } from '../office';
-import { OFFICESLIST } from '../offices';
+import { OfficesService } from '../offices.service';
 
 @Component({
   selector: 'app-list-view',
@@ -8,10 +8,12 @@ import { OFFICESLIST } from '../offices';
   styleUrls: ['./list-view.component.css']
 })
 export class ListViewComponent implements OnInit {
-  list: Office[] = OFFICESLIST;
-  constructor() { }
+  list: Office[];
+
+  constructor(private officesService: OfficesService) { }
 
   ngOnInit() {
+    this.list = this.officesService.offices;
   }
 
 }

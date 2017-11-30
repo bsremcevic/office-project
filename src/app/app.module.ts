@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { ListItemComponent } from './list-view/list-item/list-item.component';
 import { AvatarComponent } from './list-view/list-item/avatar/avatar.component';
 import { GridItemComponent } from './grid-view/grid-item/grid-item.component';
+import { OfficesService } from './offices.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { GridItemComponent } from './grid-view/grid-item/grid-item.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [OfficesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
