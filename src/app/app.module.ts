@@ -11,6 +11,7 @@ import { ListItemComponent } from './list-view/list-item/list-item.component';
 import { AvatarComponent } from './list-view/list-item/avatar/avatar.component';
 import { GridItemComponent } from './grid-view/grid-item/grid-item.component';
 import { OfficesService } from './offices.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { OfficesService } from './offices.service';
     GridItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [OfficesService],
   bootstrap: [AppComponent]

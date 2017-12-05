@@ -4,10 +4,10 @@ import { Office } from './office';
 @Injectable()
 export class OfficesService{
 
-  navUpdated = new EventEmitter<string>();
+  // navUpdated = new EventEmitter<string>();
   //this is for communication between header and AppComponent to update the main html template
 
-  nav: string;
+  // nav: string;
 
   offices: Office[] = [
      {

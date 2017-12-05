@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OfficesService } from './offices.service';
+// import { OfficesService } from './offices.service';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +7,13 @@ import { OfficesService } from './offices.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nav: string = 'List';
+  // nav: string = 'List';
 
-  constructor(private officesService: OfficesService){
-    this.officesService.navUpdated.subscribe(
-      (e: string) => (this.nav = e)
-      //updates the nav var bc of html template testing
-    )
-  }
+  // constructor(private officesService: OfficesService){
+  //   this.officesService.navUpdated.subscribe(
+  //     (e: string) => (this.nav = e)
+  //     //updates the nav var bc of html template testing
+  //   )
+  // }
 
 }

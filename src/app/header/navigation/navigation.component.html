@@ -1,7 +1,7 @@
 <nav>
   <ul class="menu">
     <li class="item" *ngFor="let item of navItems">
-      <a href="#" [class.selected]="item === selectedItem" (click)="toggleNav(item)">{{ item }}</a>
+      <a style="cursor: pointer" routerLink="/{{ item.toLowerCase() }}" routerLinkActive="selected">{{ item }}</a>
     </li>
   </ul>
 </nav>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OfficesService } from '../../offices.service';
+// import { OfficesService } from '../../offices.service';
 
 @Component({
   selector: 'app-navigation',
@@ -10,15 +10,15 @@ export class NavigationComponent {
   //the list of all the items in the navigation
   //you can add more
   navItems: string[] = ['List', 'Grid'];
-  selectedItem = "List";
+  // selectedItem = "List";
 
-  constructor(private officesService: OfficesService) { }
+  // constructor(private officesService: OfficesService) { }
 
-  toggleNav(e: string){
-    this.selectedItem = e;
-    this.officesService.nav = this.selectedItem;
-    this.officesService.navUpdated.emit(e);
-    //emit so appcomponent can update the html template
-  }
+  // toggleNav(e: string){
+  //   this.selectedItem = e;
+  //   this.officesService.nav = this.selectedItem;
+  //   this.officesService.navUpdated.emit(e);
+  //   //emit so appcomponent can update the html template
+  // }
 
 }
