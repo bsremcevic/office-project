@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Office } from '../../office';
+import { Office } from '../../office.model';
 
 @Component({
   selector: 'app-grid-item',

@@ -1,7 +1,6 @@
 
   <div class="container">
     <app-header></app-header>
-    <router-outlet></router-outlet>
-    <!-- <app-list-view *ngIf="nav === 'List'"></app-list-view>
-    <app-grid-view *ngIf="nav === 'Grid'"></app-grid-view> -->
+    <router-outlet *ngIf="officesFetched"></router-outlet>
+    <app-animation *ngIf="!officesFetched"></app-animation>
   </div>

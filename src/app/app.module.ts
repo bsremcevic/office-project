@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { AvatarComponent } from './list-view/list-item/avatar/avatar.component';
 import { GridItemComponent } from './grid-view/grid-item/grid-item.component';
 import { OfficesService } from './offices.service';
 import { AppRoutingModule } from './app-routing.module';
+import { AnimationComponent } from './animation/animation.component';
 
 
 @NgModule({
@@ -23,11 +25,13 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     ListItemComponent,
     AvatarComponent,
-    GridItemComponent
+    GridItemComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [OfficesService],
   bootstrap: [AppComponent]

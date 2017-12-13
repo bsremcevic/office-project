@@ -4,9 +4,10 @@ import { ListViewComponent } from './list-view/list-view.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/list', pathMatch: 'full'},
+  //{ path: '', redirectTo: '/list', pathMatch: 'full'},
   { path: 'list', component: ListViewComponent },
   { path: 'grid', component: GridViewComponent },
+  { path: '**', redirectTo: '/list', pathMatch: 'full'}
 ];
 
 @NgModule({

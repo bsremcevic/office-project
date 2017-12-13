@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Office } from '../office';
+import { Office } from '../office.model';
 import { OfficesService } from '../offices.service';
 
 @Component({
