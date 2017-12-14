@@ -14,6 +14,7 @@ export class ListViewComponent implements OnInit {
 
   ngOnInit() {
     this.list = this.officesService.offices;
+    //gets the list of offices from the service once the component is initialized
   }
 
 }

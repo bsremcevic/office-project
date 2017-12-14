@@ -9,6 +9,7 @@ import { Office } from '../../office.model';
 export class GridItemComponent {
 
   @Input() list: Office;
+//gets only one office from parent component so it can display and format the data in the html template
 
   constructor() { }
 

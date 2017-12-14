@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  //this component is set for structure purposes in case there is a need for further implementation
   constructor() { }
 
 }
