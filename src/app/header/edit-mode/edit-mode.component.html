@@ -1,0 +1,13 @@
+<nav>
+  <ul class="menu">
+    <li class="item" >
+      <a style="cursor: pointer" (click)="onEditMode()">Edit Mode</a>
+    </li>
+    <li class="item" *ngIf="editMode.editMode">
+      <a style="cursor: pointer" (click)="onEditSingle()" [ngClass]="{selected: this.officesService.editMode.singleEditMode}">Edit Single</a>
+    </li>
+    <li class="item" *ngIf="editMode.editMode">
+      <a style="cursor: pointer" (click)="onEditMultiple()" [ngClass]="{selected: this.officesService.editMode.multiEditMode}">Edit Multiple</a>
+    </li>
+  </ul>
+</nav>

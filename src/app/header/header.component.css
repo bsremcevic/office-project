@@ -1,7 +1,9 @@
 app-navigation {
   position: relative;
-  display: block;
+  /*display: block;*/
+  flex: 1;
 }
+
 app-navigation:before {
   content: "Offices";
   position: absolute;
@@ -11,4 +13,23 @@ app-navigation:before {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+app-edit-mode {
+  flex: 0 0 auto;
+}
+
+@media all and (max-width: 650px) {
+  app-navigation:before {
+    font-size: 2rem;
+  }
+  app-edit-mode {
+    flex: 0 0 auto;
+  }
+}
+
+@media all and (max-width: 650px) {
+  app-edit-mode {
+    display: none;
+  }
 }

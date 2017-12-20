@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -12,8 +13,10 @@ import { ListItemComponent } from './list-view/list-item/list-item.component';
 import { AvatarComponent } from './list-view/list-item/avatar/avatar.component';
 import { GridItemComponent } from './grid-view/grid-item/grid-item.component';
 import { OfficesService } from './offices.service';
+import { DataService } from './data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AnimationComponent } from './animation/animation.component';
+import { EditModeComponent } from './header/edit-mode/edit-mode.component';
 
 
 @NgModule({
@@ -26,14 +29,15 @@ import { AnimationComponent } from './animation/animation.component';
     ListItemComponent,
     AvatarComponent,
     GridItemComponent,
-    AnimationComponent
+    AnimationComponent,
+    EditModeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule
   ],
-  providers: [OfficesService],
+  providers: [OfficesService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

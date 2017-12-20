@@ -8,9 +8,9 @@ import { Subscription } from 'rxjs/Subscription';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  officesFetched: boolean = false;
+  private officesFetched: boolean = false;
   //property used for verification if animation component should be replaced with the list component in the html template.
-  subscription: Subscription;
+  private subscription: Subscription;
   //subscription property set so it could be unsubscribed once the component is destroyed, because this is an observable set by us and not angular
 
   constructor(private officesService: OfficesService){}
@@ -26,6 +26,7 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     );
   }
+
 
   ngOnDestroy(){
     this.subscription.unsubscribe();

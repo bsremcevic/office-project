@@ -11,8 +11,8 @@ img {
   border-radius: 50%;
   font-weight: bold;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .letterBig {

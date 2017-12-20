@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class NavigationComponent {
   //the list of all the items in the navigation
   //you can add more
-  navItems: string[] = ['List', 'Grid'];
+  private navItems: string[] = ['List', 'Grid'];
 }

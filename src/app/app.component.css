@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   font: normal 1rem Arial, Helvetica, sans-serif;
   color: #334455;
 }
@@ -19,7 +19,7 @@ body {
 
 @media all and (max-width: 450px) {
   .container {
-    min-width: 260px;
+    min-width: 320px;
   }
 }
 
@@ -77,6 +77,12 @@ nav a.selected {
   border-bottom: 2px solid yellow;
 }
 
+/* navigation edit */
+app-header {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
 
 
 /* media queries */

@@ -1,3 +1,6 @@
 <section>
-  <app-grid-item *ngFor="let office of list" [list]="office"></app-grid-item>
+  <app-grid-item *ngFor="let office of list let i = index" [list]="office" [index]="i"></app-grid-item>
+</section>
+<section *ngIf="officesService.editMode.multiEditMode">
+  <button class="btn" (click)="onSaveChanges()">Save Changes</button>
 </section>

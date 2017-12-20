@@ -1,6 +1,6 @@
 article {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 /*app-avatar {
@@ -10,6 +10,7 @@ article {
 .img {
   flex: 0 0 4rem;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -23,4 +24,90 @@ article {
 .office .naslov {
   display: block;
   color: white;
+}
+
+
+/* editMode*/
+
+.buttons {
+  flex: 0 0 12rem;
+  border-bottom: 1px solid #01a4bb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid yellow;
+  background: transparent;
+  width: auto;
+  margin-right: 5px;
+  transition: all .3s;
+  color: white;
+}
+
+.btn:hover {
+  background: darkyellow;
+  border-top: 2px solid yellow;
+  color: black;
+}
+
+input {
+  font: normal 1rem Arial, Helvetica, sans-serif;
+  padding: 0;
+  border: 0;
+}
+
+.naslov {
+  padding-right: 0.5rem;
+  color: #334455;
+}
+
+@media all and (max-width: 650px) {
+  .buttons {
+    display: none;
+  }
+}
+
+
+/*======================
+Check Boxes Styles
+========================*/
+
+input[type='checkbox'] {
+    z-index: -1;
+    display: none;
+}
+
+input[type='checkbox']+label {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: relative;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-indent: -999px;
+  overflow: hidden;
+  cursor: pointer;
+
+  border: 2px solid yellow;
+  background: transparent url(http://katheermizal.info/works/working-with-checkbox/assets/images/tick-icon.png) no-repeat;
+  background-position: 50% 0;
+  background-size: 2rem 4rem;
+  transition: all 0.4s ease;
+}
+
+input[type='checkbox']:hover+label {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+input[type='checkbox']:checked+label {
+  background-position: 50% -2rem;
+  background-color: #01707f;
 }

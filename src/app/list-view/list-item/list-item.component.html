@@ -1,4 +1,4 @@
-<article>
+<article (window:resize)="onResize($event)">
     <div class="img">
       <app-avatar
         [isPhoto]="list.photo ? list.photo : false"
@@ -7,5 +7,19 @@
       </app-avatar>
     </div>
     <div class="office">
-      <span class="naslov">{{ list.name }}</span>{{ list.description }}</div>
+      <span *ngIf="(!localEditMode && editMode.singleEditMode) || !editMode.editMode" class="naslov">{{ list.name }}</span>
+      <span *ngIf="(localEditMode && editMode.singleEditMode) || editMode.multiEditMode">
+        <input type="text" style="display: block" [value]="list.name" #nameInput (keyup)="onChangeInput()">
+      </span>{{ list.description }}
+    </div>
+    <div class="buttons" *ngIf="editMode.singleEditMode">
+      <button class="btn" *ngIf="!localEditMode" (click)="localEditMode = true">Edit</button>
+      <button class="btn" *ngIf="localEditMode" (click)="onSaveItem()">Save</button>
+      <button class="btn" (click)="onDeleteItem()">Delete</button>
+    </div>
+    <div class="buttons" *ngIf="editMode.multiEditMode">
+      <span class="naslov">Delete</span>
+      <input type="checkbox" class="checkbox" name="checkbox" id="checkbox_{{ index }}" value="{{ index }}" (click)="onCheckbox(index)">
+      <label for="checkbox_{{ index }}"></label>
+    </div>
 </article>
