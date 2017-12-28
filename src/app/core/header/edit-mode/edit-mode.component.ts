@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OfficesService } from '../../offices.service';
+import { OfficesService } from '../../../shared/offices.service';
 
 
 @Component({

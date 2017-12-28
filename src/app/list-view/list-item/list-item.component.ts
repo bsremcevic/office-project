@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, OnDestroy } from '@angular/core';
-import { Office } from '../../office.model';
-import { OfficesService } from '../../offices.service';
+import { Office } from '../../shared/office.model';
+import { OfficesService } from '../../shared/offices.service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({

@@ -9,7 +9,7 @@ export class Office {
   ){}
 
 }
-//   the above is the same as:
+//   the above is the same as: 
 
 //   public id: number;
 //   ...

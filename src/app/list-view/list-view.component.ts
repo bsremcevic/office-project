@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Office } from '../office.model';
-import { DataService } from '../data.service';
-import { OfficesService } from '../offices.service';
+import { Office } from '../shared/office.model';
+import { DataService } from '../shared/data.service';
+import { OfficesService } from '../shared/offices.service';
 
 @Component({
   selector: 'app-list-view',
